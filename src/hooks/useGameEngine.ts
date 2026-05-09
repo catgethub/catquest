@@ -25,7 +25,7 @@ const initialPlayerState: PlayerState = {
 
 const initialGameState: GameState = {
   currentLevel: 1,
-  selectedCharacter: 'lou',
+  selectedCharacter: 'oneal',
   player: initialPlayerState,
   isPlaying: false,
   isPaused: false,

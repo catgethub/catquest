@@ -19,9 +19,9 @@ export const characters: Record<string, Character> = {
     speed: 7,
     jumpPower: 14,
   },
-  lou: {
-    id: 'lou',
-    name: 'Lou',
+  oneal: {
+    id: 'oneal',
+    name: 'Oneal',
     description: 'A tactical soldier who can glide with a parachute. Perfect for strategic landings!',
     color: 'foreground',
     ability: 'Glide',

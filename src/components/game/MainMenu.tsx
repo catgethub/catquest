@@ -12,7 +12,7 @@ interface MainMenuProps {
 }
 
 export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
-  const [selectedCharacter, setSelectedCharacter] = useState<CharacterType>('lou');
+  const [selectedCharacter, setSelectedCharacter] = useState<CharacterType>('oneal');
   const [showLevelSelect, setShowLevelSelect] = useState(false);
 
   const characterList = Object.values(characters);
@@ -108,11 +108,11 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                     {/* Character preview */}
                     <div className={`mx-auto mb-2 rounded-t-full rounded-b-lg relative overflow-hidden ${
                       char.id === 'badju' ? 'w-12 h-14 sm:w-14 sm:h-16 bg-destructive' : 
-                      char.id === 'lou' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-foreground' : 
+                      char.id === 'oneal' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-foreground' : 
                       char.id === 'teri' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-primary' : 'w-10 h-12 sm:w-12 sm:h-14 bg-accent'
                     }`}>
                       {/* Lou's camo pattern */}
-                      {char.id === 'lou' && (
+                      {char.id === 'oneal' && (
                         <>
                           <div className="absolute top-1 left-0.5 w-2 h-1.5 rounded-full" style={{ backgroundColor: '#556B2F' }} />
                           <div className="absolute top-3 right-0 w-2.5 h-2 rounded-full" style={{ backgroundColor: '#6B8E23' }} />
@@ -156,7 +156,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                           </div>
                         </>
                       )}
-                      {char.id === 'lou' && (
+                      {char.id === 'oneal' && (
                         <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-3 rounded-t-full" style={{ backgroundColor: '#556B2F' }} />
                       )}
                       {char.id === 'teri' && (
