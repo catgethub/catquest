@@ -144,7 +144,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                           </div>
                         </>
                       )}
-                      {char.id === 'mark' && (
+                      {char.id === 'tibat' && (
                         <>
                           {/* Dreadlocks */}
                           <div className="absolute -top-1 left-1/2 -translate-x-1/2 flex gap-0.5">
