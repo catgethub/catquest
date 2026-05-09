@@ -10,9 +10,9 @@ export const characters: Record<string, Character> = {
     speed: 4,
     jumpPower: 14,
   },
-  christo: {
-    id: 'christo',
-    name: 'Christo',
+  mark: {
+    id: 'mark',
+    name: 'Mark',
     description: 'A fiery speedster who can dash through enemies. Great for aggressive playstyles!',
     color: 'accent',
     ability: 'Fire Dash',

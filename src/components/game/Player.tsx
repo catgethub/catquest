@@ -9,7 +9,7 @@ interface PlayerProps {
 
 export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => {
   const isBadju = characterType === 'badju';
-  const isChristo = characterType === 'christo';
+  const isMark = characterType === 'mark';
   const isLou = characterType === 'oneal';
   const isTeri = characterType === 'teri';
   

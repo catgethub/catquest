@@ -273,7 +273,7 @@ export const useGameEngine = () => {
       }
 
       // Dash ability for Christo
-      if (dash && prev.selectedCharacter === 'christo' && !dashCooldown.current) {
+      if (dash && prev.selectedCharacter === 'mark' && !dashCooldown.current) {
         newVx = facingRight ? 15 : -15;
         dashCooldown.current = true;
         sounds.playDashSound();
