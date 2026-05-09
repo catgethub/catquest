@@ -1,6 +1,6 @@
 // Game Types for CatQuest
 
-export type CharacterType = 'derrik' | 'christo' | 'lou' | 'teri';
+export type CharacterType = 'badju' | 'christo' | 'lou' | 'teri';
 
 export interface Position {
   x: number;

@@ -1,9 +1,9 @@
 import { Character } from '@/types/game';
 
 export const characters: Record<string, Character> = {
-  derrik: {
-    id: 'derrik',
-    name: 'Derrik',
+  badju: {
+    id: 'badju',
+    name: 'Badju',
     description: 'A skilled plumber with the power of double jump. Strong and unstoppable!',
     color: 'destructive',
     ability: 'Double Jump',
@@ -40,5 +40,5 @@ export const characters: Record<string, Character> = {
 };
 
 export const getCharacter = (id: string): Character => {
-  return characters[id] || characters.derrik;
+  return characters[id] || characters.badju;
 };

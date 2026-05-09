@@ -8,20 +8,20 @@ interface PlayerProps {
 }
 
 export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => {
-  const isDerrik = characterType === 'derrik';
+  const isBadju = characterType === 'badju';
   const isChristo = characterType === 'christo';
   const isLou = characterType === 'lou';
   const isTeri = characterType === 'teri';
   
   const getBodyColor = () => {
-    if (isDerrik) return 'bg-destructive';
+    if (isBadju) return 'bg-destructive';
     if (isLou) return 'bg-foreground';
     if (isTeri) return 'bg-primary';
     return 'bg-accent';
   };
 
   const getBlushColor = () => {
-    if (isDerrik) return 'bg-rose-300';
+    if (isBadju) return 'bg-rose-300';
     if (isLou) return 'bg-green-700';
     if (isTeri) return 'bg-pink-300';
     return 'bg-orange-300';
@@ -33,8 +33,8 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
       style={{
         left: player.position.x - cameraOffset,
         top: player.position.y,
-        width: isDerrik ? 50 : 40,
-        height: isDerrik ? 55 : 50,
+        width: isBadju ? 50 : 40,
+        height: isBadju ? 55 : 50,
       }}
       animate={{
         scaleX: player.facingRight ? 1 : -1,
@@ -101,9 +101,9 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
         </div>
 
         {/* Character accessories: Derrik's plumber gear / Christo's flame / Lou's wings / Teri's claws */}
-        {isDerrik ? (
+        {isBadju ? (
           <>
-            {/* Derrik's plumber cap */}
+            {/* Badju's plumber cap */}
             <div className="absolute -top-4 left-1/2 -translate-x-1/2">
               <div className="w-10 h-4 bg-red-600 rounded-t-full" />
               <div className="w-12 h-2 bg-red-700 rounded-full -mt-0.5" />
@@ -112,7 +112,7 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
                 <div className="w-1.5 h-1.5 bg-red-600 rounded-full" />
               </div>
             </div>
-            {/* Derrik's wrench */}
+            {/* Badju's wrench */}
             <motion.div 
               className="absolute top-4 -right-5 transform rotate-45"
               animate={player.isMoving ? { rotate: [35, 55, 35] } : { rotate: 45 }}
