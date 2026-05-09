@@ -1,6 +1,6 @@
 // Game Types for CatQuest
 
-export type CharacterType = 'badju' | 'tibat' | 'oneal' | 'boyet';
+export type CharacterType = 'badju' | 'tibat' | 'oneal' | 'balwee';
 
 export interface Position {
   x: number;
