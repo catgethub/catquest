@@ -195,7 +195,7 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
             <div className="absolute -top-1 left-1/2 -translate-x-1/2 w-10 h-2 bg-destructive/80 rounded-full" />
             <div className="absolute -top-2 right-0 w-3 h-4 bg-destructive/80 rounded-sm transform rotate-12" />
           </>
-        ) : isChristo ? (
+        ) : isMark ? (
           <>
             {/* Christo's dreadlocks */}
             <motion.div 
