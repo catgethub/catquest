@@ -28,9 +28,9 @@ export const characters: Record<string, Character> = {
     speed: 5,
     jumpPower: 14,
   },
-  boyet: {
-    id: 'boyet',
-    name: 'Boyet',
+  balwee: {
+    id: 'balwee',
+    name: 'Balwee',
     description: 'A nimble climber who can scale walls with ease. Great for vertical exploration!',
     color: 'primary',
     ability: 'Wall Climb',
