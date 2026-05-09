@@ -11,7 +11,7 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
   const isBadju = characterType === 'badju';
   const isMark = characterType === 'mark';
   const isLou = characterType === 'oneal';
-  const isTeri = characterType === 'teri';
+  const isBoyet = characterType === 'boyet';
   
   const getBodyColor = () => {
     if (isBadju) return 'bg-destructive';
