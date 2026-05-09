@@ -107,7 +107,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                   >
                     {/* Character preview */}
                     <div className={`mx-auto mb-2 rounded-t-full rounded-b-lg relative overflow-hidden ${
-                      char.id === 'derrik' ? 'w-12 h-14 sm:w-14 sm:h-16 bg-destructive' : 
+                      char.id === 'badju' ? 'w-12 h-14 sm:w-14 sm:h-16 bg-destructive' : 
                       char.id === 'lou' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-foreground' : 
                       char.id === 'teri' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-primary' : 'w-10 h-12 sm:w-12 sm:h-14 bg-accent'
                     }`}>
@@ -125,7 +125,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                         <div className="w-1.5 h-2 sm:w-2 sm:h-2.5 bg-card rounded-full" />
                       </div>
                       {/* Character-specific accessories */}
-                      {char.id === 'derrik' && (
+                      {char.id === 'badju' && (
                         <>
                           {/* Plumber cap */}
                           <div className="absolute -top-2 left-1/2 -translate-x-1/2">

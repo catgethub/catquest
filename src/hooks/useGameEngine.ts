@@ -256,13 +256,13 @@ export const useGameEngine = () => {
       if (jump && isGrounded) {
         newVy = -character.jumpPower;
         isGrounded = false;
-        doubleJumpAvailable.current = prev.selectedCharacter === 'derrik';
+        doubleJumpAvailable.current = prev.selectedCharacter === 'badju';
         sounds.playJumpSound();
         keysPressed.current.delete('ArrowUp');
         keysPressed.current.delete('w');
         keysPressed.current.delete(' ');
         mobileInputs.current.jump = false;
-      } else if (jump && !isGrounded && doubleJumpAvailable.current && prev.selectedCharacter === 'derrik') {
+      } else if (jump && !isGrounded && doubleJumpAvailable.current && prev.selectedCharacter === 'badju') {
         newVy = -character.jumpPower * 0.85;
         doubleJumpAvailable.current = false;
         sounds.playDoubleJumpSound();
@@ -307,7 +307,7 @@ export const useGameEngine = () => {
           newY = platform.y - playerHeight;
           newVy = 0;
           groundedThisFrame = true;
-          doubleJumpAvailable.current = prev.selectedCharacter === 'derrik';
+          doubleJumpAvailable.current = prev.selectedCharacter === 'badju';
         }
 
         // Check horizontal collision
