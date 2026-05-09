@@ -166,7 +166,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                     
                     <h4 className="font-display font-bold text-foreground text-sm sm:text-base">{char.name}</h4>
                     <div className="flex items-center justify-center gap-1 text-xs text-muted-foreground mt-1">
-                      {char.id === 'derrik' ? (
+                      {char.id === 'badju' ? (
                         <Sparkles className="w-3 h-3" />
                       ) : (
                         <Zap className="w-3 h-3" />
@@ -205,7 +205,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
               <div className="grid grid-cols-2 gap-2 text-xs text-muted-foreground">
                 <div>← → or A/D: Move</div>
                 <div>↑, W or Space: Jump</div>
-                <div>Shift: {selectedCharacter === 'derrik' ? 'Double Jump (in air)' : 'Fire Dash'}</div>
+                <div>Shift: {selectedCharacter === 'badju' ? 'Double Jump (in air)' : 'Fire Dash'}</div>
                 <div>ESC: Pause</div>
               </div>
             </div>
