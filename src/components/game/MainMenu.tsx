@@ -109,7 +109,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                     <div className={`mx-auto mb-2 rounded-t-full rounded-b-lg relative overflow-hidden ${
                       char.id === 'badju' ? 'w-12 h-14 sm:w-14 sm:h-16 bg-destructive' : 
                       char.id === 'oneal' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-foreground' : 
-                      char.id === 'teri' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-primary' : 'w-10 h-12 sm:w-12 sm:h-14 bg-accent'
+                      char.id === 'boyet' ? 'w-10 h-12 sm:w-12 sm:h-14 bg-primary' : 'w-10 h-12 sm:w-12 sm:h-14 bg-accent'
                     }`}>
                       {/* Lou's camo pattern */}
                       {char.id === 'oneal' && (
@@ -159,7 +159,7 @@ export const MainMenu = ({ onStartGame, onSelectLevel }: MainMenuProps) => {
                       {char.id === 'oneal' && (
                         <div className="absolute -top-2 left-1/2 -translate-x-1/2 w-8 h-3 rounded-t-full" style={{ backgroundColor: '#556B2F' }} />
                       )}
-                      {char.id === 'teri' && (
+                      {char.id === 'boyet' && (
                         <div className="absolute -top-0.5 left-1/2 -translate-x-1/2 w-8 h-1.5 bg-destructive/80 rounded-full" />
                       )}
                     </div>

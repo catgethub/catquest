@@ -11,19 +11,19 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
   const isBadju = characterType === 'badju';
   const isMark = characterType === 'mark';
   const isLou = characterType === 'oneal';
-  const isTeri = characterType === 'teri';
+  const isBoyet = characterType === 'boyet';
   
   const getBodyColor = () => {
     if (isBadju) return 'bg-destructive';
     if (isLou) return 'bg-foreground';
-    if (isTeri) return 'bg-primary';
+    if (isBoyet) return 'bg-primary';
     return 'bg-accent';
   };
 
   const getBlushColor = () => {
     if (isBadju) return 'bg-rose-300';
     if (isLou) return 'bg-green-700';
-    if (isTeri) return 'bg-pink-300';
+    if (isBoyet) return 'bg-pink-300';
     return 'bg-orange-300';
   };
   
@@ -166,7 +166,7 @@ export const Player = ({ player, characterType, cameraOffset }: PlayerProps) => 
               </motion.div>
             )}
           </>
-        ) : isTeri ? (
+        ) : isBoyet ? (
           <>
             {/* Teri's climbing claws on hands */}
             <motion.div 
